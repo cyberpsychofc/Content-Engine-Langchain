@@ -7,5 +7,5 @@ langserve
 pypdf
 sentence_transformers
 langchain-groq
-chromadb
 groq
+faiss-cpu
