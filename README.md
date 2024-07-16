@@ -1,7 +1,7 @@
 
 # Content Engine-Langchain
 
-This content engine is an implementation of RAG using Langchain, Streamlit and Groq API. This chatbot can be used to converse with the end user who intends to find insights about financial performance of companies like _Alphabet_, _Nvidia_ ,_Tesla_ and _Uber_. It has been trained on the **FORM-10K** for the fiscal year **2023** of the mentioned companies.
+This content engine is an implementation of RAG using Langchain, Streamlit and Groq API. This chatbot can be used to converse with the end user who intends to find insights about financial performance of companies like _Alphabet_, _Nvidia_ ,_Tesla_ and _Uber_. It retrieves from **FORM-10K** for the fiscal year **2023** of the mentioned companies.
 
 
 
