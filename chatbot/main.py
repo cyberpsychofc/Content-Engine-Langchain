@@ -11,12 +11,20 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
+# for custom deployemnt
+'''
 load_dotenv()
 
 os.environ["GROQ_API_KEY"]=os.getenv("GROQ_API_KEY")
 ##Langsmith Tracking
 os.environ["LANGCHAIN_TRACING"]="true"
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
+'''
+# for streamlit deployment
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+##Langsmith Tracking
+os.environ["LANGCHAIN_TRACING"]="true"
+os.environ["LANGCHAIN_API_KEY"]= st.secrets["LANGCHAIN_API_KEY"]
 
 prompt = ChatPromptTemplate.from_template("""
 Answer the following question based only on the provided context.
